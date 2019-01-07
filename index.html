@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site du chef</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="text-white row container mb-5">
+                <div class="col-5 pt-5">
+                    <ul class="float-right ">
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3"
+                                href="index.html">HOME</a>
+                        
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3"
+                                href="#story">ABOUT US</a></li>
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3"
+                                href="#tabs">MENU LIST</a></li>
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3" 
+                                href="#team">TEAM</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 text-center pt-4">
+                    <img class="img-fluid" src="./git_bootstrap_les_chefs/images/logo.png" alt="">
+                </div>
+                <div class="col-5 px-0 pt-5">
+                    <ul class="float-left">
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3" href="#reservation">RESERVATION</a></li>
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-3 py-3" href="#blog">BLOG</a></li>
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-2 py-3" href="#Testimonials">TESTIMONALS</a></li>
+                        <li class=" py-3 btn-outline-secondary text-white"><a class="btn-outline-secondary text-white px-2 py-3" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <h1 class="text-center text-white pt-5 display-4">Watever your OCCASION, <br> <span class=" text-secondary">TASTE</span>
+            makes it one <br> to
+            rembember!</h1>
+        <div class="text-center pt-5 ">
+            <button type="button" class=" p-3 btn btn-light ">PURCHASE THEME</button>
+            <button type="button" class=" p-3 btn btn-secondary ml-4">LEARN MORE</button>
+        </div>
+    </header>
+    <!-- fin header -->
+    <section>
+        <div class="container">
+            <div class="card mx-auto p-0  mb-5 mt-5">
+                <div class=" text-center d-flex">
+                    <img class="mr-auto" src="/git_bootstrap_les_chefs/images/box-left-top.png" alt="">
+                    <div>
+                        <h1 id="story" class=" m-0 pt-5 "><span class="text-secondary">OUR</span> story</h1>
+                        <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+                    </div>
+                    <img class="ml-auto" src="/git_bootstrap_les_chefs/images/box-right-top.png" alt="">
+                </div>
+
+                <div class="text-center px-5 mx-5">
+                    <p class="marge-p pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure quasi illo possimus quod recusandae aut eaque animi cum quibusdam? Quisquam explicabo ex repellat praesentium tempora quibusdam debitis voluptate, eligendi, minus laborum eos veritatis recusandae similique nobis, exercitationem nam rem optio. Cupiditate perferendis quisquam in beatae debitis deleniti, eveniet eligendi.</p>
+                </div>
+                <div class="text-center">
+                    <h1 class=" m-0 pt-5 "><span class="text-secondary">OUR </span>Menu List</h1>
+                    <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+                </div>
+
+                <!-- la tabs interminable -->
+
+                <div class="row mr-3">
+                    <div class="col-3" id="tab">
+                        <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link" id="v-pills-breakfast-tab" data-toggle="pill" href="#v-pills-breakfast"
+                                role="tab" aria-controls="v-pills-breakfast" aria-selected="true"><i class="fas fa-coffee"></i>
+                                <h3>Breakfast</h3>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-lunch-tab" data-toggle="pill" href="#v-pills-lunch" role="tab"
+                                aria-controls="v-pills-lunch" aria-selected="false"><i class="fas fa-apple-alt"></i>
+                                <h3>Lunch</h3>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-snacks-tab" data-toggle="pill" href="#v-pills-snacks" role="tab"
+                                aria-controls="v-pills-snacks" aria-selected="false"><i class="fas fa-concierge-bell"></i>
+                                <h3>Snacks</h3>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-dinner-tab" data-toggle="pill" href="#v-pills-dinner" role="tab"
+                                aria-controls="v-pills-dinner" aria-selected="false"><i class="fas fa-coffee"></i>
+                                <h3>Breakfast</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-breakfast" role="tabpanel"
+                                aria-labelledby="v-pills-breakfast-tab">
+                                <div class="row my-3">
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                            <span class="badge py-2 px-4 rounded-0 float-right n text-danger mt-5">$25</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-6 border-style">
+                                        <div class="media">
+                                            <img class="mr-3 rounded-circle" height=80 src="/git_bootstrap_les_chefs/images/menu_image_1.jpg"
+                                                alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Deer steak with potatoes</h5>
+                                                <p>welcome to restaurant risoto website. Here we try to share
+                                                    our</p>
+                                            </div>
+                                        </div>
+    </section>
+    <!-- fin cards avec tabs -->
+    <section class="bg-chef pb-5 text-white" id="team">
+        <div class="text-center">
+            <h1 class=" m-0 pt-5 "><span class="text-secondary">MEET </span>Our Chef</h1>
+            <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row pt-5 text-center">
+                <div class="col-3 "><img class="bordure" src="/git_bootstrap_les_chefs/images/chef1.png" alt=""><span
+                        class="pt-1">lorem abdulah</span></div>
+                <div class="col-3 "><img class="bordure" src="/git_bootstrap_les_chefs/images/chef2.png" alt=""><span
+                        class="pt-1">lorem abdulah</span></div>
+                <div class="col-3 "><img class="bordure" src="/git_bootstrap_les_chefs/images/chef3.png" alt=""><span
+                        class="pt-1">lorem abdulah</span></div>
+                <div class="col-3 "><img class="bordure" src="/git_bootstrap_les_chefs/images/chef4.png" alt=""><span
+                        class="pt-1">lorem abdulah</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- fin section chef -->
+    <section>
+        <div class="container" id="reservation">
+            <div class="card mx-auto p-0  mb-5 mt-5">
+                <div class=" text-center d-flex">
+                    <img class="mr-auto" src="/git_bootstrap_les_chefs/images/box-left-top-grey.png" alt="">
+                    <div>
+                        <h1 class=" m-0 pt-5 "><span class="text-secondary">BOOK </span> Your Table</h1>
+                        <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+                    </div>
+                    <img class="ml-auto" src="/git_bootstrap_les_chefs/images/box-right-top-grey.png" alt="">
+                </div>
+                <div class="pt-5 mx-auto bg-image mt-5 pb-5  ">
+                    <h3 class="text-center text-white mb-5">For any query please call us at +91-1234567890</h3>
+                    <form>
+                        <div class="row justify-content-center pb-3">
+                            <div class="col-12 col-lg-4">
+                                <input type="text" class="form-control" placeholder="Enter Full Name">
+                            </div>
+                            <div class="col-12 col-lg-4 float-right">
+                                <input type="text" class="form-control" placeholder="Enter id">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pb-3">
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-4 float-right">
+                                <input type="text" class="form-control" placeholder="No Of personne">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pb-3">
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="col-4 float-right">
+                                <input type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pb-3">
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Occasion">
+                            </div>
+                            <div class="col-4 float-right">
+                                <input type="text" class="form-control" placeholder="cuisine">
+                            </div>
+                        </div>
+                        <div class="text-center pt-4">
+                            <button type="button" class="btn p-3 btn-secondary">BOOK NOW</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-center">
+                    <h1 id="blog" class=" m-0 pt-5 "><span class="text-secondary">OUR </span>Blog</h1>
+                    <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+                </div>
+                <div class="mx-5">
+                    <div class="row text-center pt-5">
+                        <div class="col-6"><img class="bordure-2 img-fluid" src="/git_bootstrap_les_chefs/images/blog_img1.jpg"
+                                alt="">
+                            <p><span class="bg-april bg-secondary text-white"><strong>12</strong> April
+                                    2017/ <strong>20</strong>
+                                    Comment/
+                                    <strong>35</strong> Like</span></p>
+                            <h4 class="text-left ml-5 pl-3 mb-3">Lorem ipsum dolor</h4>
+                            <p class="text-left ml-5 pl-3">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Facilis blanditiis eius nulla molestias excepturi fuga enim</p>
+                        </div>
+                        <div class="col-6"><img class="bordure-2 img-fluid" src="/git_bootstrap_les_chefs/images/blog_img2.jpg"
+                                alt="">
+                            <p><span class="bg-april bg-secondary text-white"><strong>12</strong> April
+                                    2017/ <strong>20</strong>
+                                    Comment/
+                                    <strong>35</strong> Like</span></p>
+
+                            <h4 class="text-left ml-5 pl-3 mb-3">Lorem ipsum dolor</h4>
+                            <p class="text-left ml-5 pl-3">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Facilis blanditiis eius nulla molestias excepturi fuga enim</p>
+                        </div>
+                    </div>
+                    <div class="text-center pt-5 pb-5"><button type="button" class="btn p-3 btn-secondary">KNOW MORE</button>
+                    </div>
+                </div>
+
+                <div class=" text-center d-flex">
+                    <img class="mr-auto" src="/git_bootstrap_les_chefs/images/box-bottom-left-grey.png" alt="">
+                    <div>
+                    </div>
+                    <img class="ml-auto" src="/git_bootstrap_les_chefs/images/box-bottom_right-grey.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin cards 2 -->
+    <section id="Testimonials" class="bg-chef">
+        <div class="container">
+            <div class="text-center text-white">
+                <h1 class=" m-0 pt-5 "><span class="text-secondary">CLIENT</span> Testimonials</h1>
+                <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+            </div>
+            <div class="row justify-content-around mt-5 text-white pb-5">
+                <div class="col-2"><img class=" blanc rounded-circle img-fluid" src="/git_bootstrap_les_chefs/images/testimonial1.jpg "
+                        alt=""></div>
+                <div class="col-4 ">
+                    <div class="bordure-3 p-3">
+                        <h5>Lorem, ipsum.</h5><span class="text-secondary">Manager</span>
+                        <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, adipisci?
+                            Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="bordure-3 p-3">
+                        <h5>Lorem, ipsum.</h5><span class="text-secondary ">Manager</span>
+                        <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, adipisci?
+                            Lorem ipsum dolor sit.</p>
+                    </div> 
+                </div>
+                <div class="col-2"><img class=" blanc rounded-circle img-fluid" src="/git_bootstrap_les_chefs/images/testimonial1.jpg"
+                        alt=""></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- fin section femme -->
+    <section id="contact">
+        <div class="container point">
+            <div class="text-center mb-5">
+                <h1 class="  pt-5 "><span class="text-secondary">OUR </span>Contact</h1>
+                <img class="img-fluid" src="/git_bootstrap_les_chefs/images/decoration_line.png" alt="">
+            </div>
+            <div class="card mx-auto mb-5 text-center bg-secondary py-4 text-white bordure-cards" style="width: 26rem;">
+                <i class="fas fa-3x fa-map-marker-alt pb-3"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti!</p>
+                <hr class="mx-auto">
+                <i class="fas fa-3x fa-phone pb-3"></i>
+                <p>91-9876543210</p>
+                <hr class="mx-auto">
+                <i class="fas fa-3x fa-envelope pb-3"></i>
+                <p>abc@abc.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- fin cards avec email -->
+    <footer class="text-whithe">
+        <div class="container">
+            <div class="row pt-5 text-white pb-5">
+                <div class="col-4">
+                    <h3>ABOUT US</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fetur quam optio quaerat
+                        possimus
+                        incidunt? Alias quaerat !</p>
+                    <div class="fa-2x">
+                        <a class="text-white" href="https://facebook.com/"><i class="fab pr-3 fa-facebook-f"></i></a>
+                        <i class="fab px-3 fa-google-plus-g"></i>
+                        <i class="fab px-3 fa-pinterest-p"></i>
+                        <i class="fab px-3 fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-3">INSTAGRAM</h3>
+                    <div class="row">
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img1.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img2.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img1.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img2.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img1.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img2.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img1.jpg"
+                                alt=""></div>
+                        <div class="col-3"><img class="img-fluide" src="/git_bootstrap_les_chefs/images/instragram_gallery_img2.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="pb-1">POPULAR TAGS</h3>
+                    <button type="button" class="btn btn-secondary mr-2 mb-3 w ">Restaurant</button>
+                    <button type="button" class="btn btn-secondary mr-2 mb-3 w">Responsive Design</button>
+                    <button type="button" class="btn btn-secondary mb-3 w">Hotel</button>
+                    <div><button type="button" class="btn btn-secondary mr-2 mb-3 w">Blog Selection</button><button
+                            type="button" class="btn btn-secondary mr-2 mb-3 w">SEO</button><button type="button" class="btn btn-secondary mr-2 mb-3 w">Cuisine</button></div>
+                    <div><button type="button" class="btn btn-secondary mr-2 w">Graphic</button><button type="button"
+                            class="btn btn-secondary w ">Food</button></div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary b"></div>
+    </footer>
+
+</body>
+
+</html>
