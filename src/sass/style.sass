@@ -1,45 +1,32 @@
+@import './_background.sass'
+@import './_nav.sass'
+@import './_tabs.sass'
 @import './_variables.sass'
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
+
+
+
+
+html
+    scroll-behavior: smooth
 
 body
     font-family: "Open Sans"
     src: url ("/git_bootstrap_les_chefs/fonts/Flaticon.woff")
-    background-image: url('/git_bootstrap_les_chefs/images/main_bg.jpg')
 
 h1
-    font-family: 'Courgette', cursive
+    font-family: 'Courgette', cursive  
     
-    
-header
-    background: url("/git_bootstrap_les_chefs/images/bottom_decoration_img.png") repeat-x bottom ,linear-gradient(#332b2bbd, #332b2bbd), url('/git_bootstrap_les_chefs/images/banner1.jpg')
-    height: 120vh
 
-
-
-li
-    list-style: none
-    display: inline-block
-
-ul
-    padding-left: 0
-    border-bottom: solid 2px
-    border-top: solid 2px
-
-.bg-chef
-    background-image: url("/git_bootstrap_les_chefs/images/team_background.jpg")
 
 .bordure
     border-bottom: solid 2px
     border-color: whithe
 
-.bg-image
-    background-image: url('/git_bootstrap_les_chefs/images/book_table_bg.jpg')
-    width: 69%
-    border-radius: 3%
+
 .form-control
     width: auto
-.v
-    height: 100vh
+
 .bordure
     border-bottom: 1%
     border-color: white
@@ -47,14 +34,6 @@ ul
     border: solid 3px
     border-color: aliceblue
     border-radius: 1.25rem
-.bg-april
-    background-color: #eb4d4b
-    position: relative
-    bottom: 20px
-    padding: 30px
-    font-size: 20px
-    border-radius: 1.25rem
-
 .bordure-femme
     border: solid 5px !important
     border-color: white
@@ -64,33 +43,30 @@ hr
     width: 75%
     background-color: white
 footer
-    background-image: url('/git_bootstrap_les_chefs/images/footer_background.jpg')
     background-position: 60%
-.b
-    height: 10vh
+
 .img-fluide
     max-width: 100%
 .bordure-3
     border: solid 1px
     border-color: aliceblue
     border-radius: 1.25rem
-
-
-.bloup
-    border-radius: 50%
-    border-color: white
-    
-.blanc
+.bordure-femme-rond
     border: solid 4px
     border-color: aliceblue
-.w
+.border-bouton
     border: solid 1px
     border-color: white
-.n
+.color-alice
     background-color: aliceblue
 
-a:hover
-    text-decoration: none !important
 .marge-p
     margin-right: 200px
     margin-left: 200px
+.test
+    border-right: solid 20px
+
+.div-rose-fin
+    height: 10vh
+a:hover
+    text-decoration: none !important
